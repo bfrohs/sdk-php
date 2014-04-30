@@ -1,6 +1,6 @@
 <?php
 
-class AuthorizeNetTD_Test extends PHPUnit_Framework_TestCase {
+class AuthorizeNetSSL_Test extends PHPUnit_Framework_TestCase {
     public function testSandboxSSLCertIsValid()
     {
         exec("echo | openssl s_client -connect test.authorize.net:443 -showcerts -verify 10 -CAfile ../lib/ssl/cert.pem 2>&1", $output, $return_value);
