@@ -8,5 +8,8 @@
 	"require": {
 		"php": ">=5.2.0",
 		"ext-curl": "*"
-	}
+	},
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
 }

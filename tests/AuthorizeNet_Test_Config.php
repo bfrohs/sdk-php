@@ -37,7 +37,7 @@ if (!function_exists('curl_init')) {
 }
 
 require_once dirname(dirname(__FILE__)) . '/AuthorizeNet.php';
-require_once '/PHPUnit/Autoload.php';
+require_once dirname(dirname(__FILE__)) . '/vendor/autoload.php';
 
 if (AUTHORIZENET_API_LOGIN_ID == "") {
     die('Enter your merchant credentials in '.__FILE__.' before running the test suite.');
