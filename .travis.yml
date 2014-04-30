@@ -11,3 +11,21 @@ before_script:
   - composer install
 
 script: ./vendor/bin/phpunit tests/
+
+env:
+  global:
+    # In order to keep API credentials secret, they must be encrypted manually.
+    #
+    # The following constants must be defined:
+    # - AUTHORIZENET_API_LOGIN_ID
+    # - AUTHORIZENET_TRANSACTION_KEY
+    # - AUTHORIZENET_MD5_SETTING
+    # - MERCHANT_LIVE_API_LOGIN_ID
+    # - MERCHANT_LIVE_TRANSACTION_KEY
+    # - CP_API_LOGIN_ID
+    # - CP_TRANSACTION_KEY
+    #
+    # See http://docs.travis-ci.com/user/build-configuration/#Secure-environment-variables
+    #
+    # For each encryped value, a line similar to the following one will be added:
+    # - secure: "ENCRYPTEDCONSTANTANDVALUE"

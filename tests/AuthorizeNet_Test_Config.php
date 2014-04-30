@@ -6,20 +6,20 @@
 /**
  * Enter your test account credentials to run tests against sandbox.
  */
-define("AUTHORIZENET_API_LOGIN_ID", "");
-define("AUTHORIZENET_TRANSACTION_KEY", "");
-define("AUTHORIZENET_MD5_SETTING", "");
+define("AUTHORIZENET_API_LOGIN_ID", getenv("AUTHORIZENET_API_LOGIN_ID"));
+define("AUTHORIZENET_TRANSACTION_KEY", getenv("AUTHORIZENET_TRANSACTION_KEY"));
+define("AUTHORIZENET_MD5_SETTING", getenv("AUTHORIZENET_MD5_SETTING"));
 /**
  * Enter your live account credentials to run tests against production gateway.
  */
-define("MERCHANT_LIVE_API_LOGIN_ID", "");
-define("MERCHANT_LIVE_TRANSACTION_KEY", "");
+define("MERCHANT_LIVE_API_LOGIN_ID", getenv("MERCHANT_LIVE_API_LOGIN_ID"));
+define("MERCHANT_LIVE_TRANSACTION_KEY", getenv("MERCHANT_LIVE_TRANSACTION_KEY"));
 
 /**
  * Card Present Sandbox Credentials
  */
-define("CP_API_LOGIN_ID", "");
-define("CP_TRANSACTION_KEY", "");
+define("CP_API_LOGIN_ID", getenv("CP_API_LOGIN_ID"));
+define("CP_TRANSACTION_KEY", getenv("CP_TRANSACTION_KEY"));
 
 
 define("AUTHORIZENET_LOG_FILE", dirname(__FILE__) . "/log");
