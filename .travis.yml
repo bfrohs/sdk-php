@@ -7,7 +7,7 @@ php:
   - "5.2"
 
 before_script:
-  - if [[ "$TRAVIS_PHP_VERSION" == "5.3" ]]; then pecl install Phar; fi
+  - if [[ "$TRAVIS_PHP_VERSION" == "5.2" ]]; then pecl install Phar; fi
   - composer install
 
 script: ./vendor/bin/phpunit tests/
